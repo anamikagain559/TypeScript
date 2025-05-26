@@ -1,5 +1,6 @@
 {
-  function formatString(input: string, toUpper: boolean = true): string {
+
+function formatString(input: string, toUpper: boolean = true): string {
   return toUpper ? input.toUpperCase() : input.toLowerCase();
 }
 
@@ -101,6 +102,7 @@ function getDayType(day: Day): string {
 
 const output4 = getDayType(Day.Monday);
 const output = getDayType(Day.Sunday);
+
 console.log(output4);
 console.log(output);
 
@@ -115,4 +117,5 @@ async function squareAsync(n: number): Promise<number> {
 
 squareAsync(4).then(console.log);
 squareAsync(-3).catch(console.error);
+
 }
